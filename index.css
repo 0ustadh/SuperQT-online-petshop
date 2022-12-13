@@ -1,0 +1,67 @@
+*{font-family:'Outfit', sans-serif}
+body, nav{background-color:pink}
+header{margin:1%;padding-top:5rem}
+a{text-decoration:none}
+
+  /* Main */
+  main, #shop, #reviews, #contact{margin:1%}
+  .carousel-caption {margin-bottom:1.25rem;
+    padding-bottom:1.25rem;
+    text-align:left;
+  }
+  .carousel-caption {
+      background-color: rgb(0 0 0 / 22%);
+      padding: 20px;
+      border-radius: 10px;
+  }
+  .choices .caption{
+    background-color: rgb(0 0 0 / 22%);
+    border-radius: 10px;
+    filter: brightness(135%);
+  }
+  .choices .choices-1{background:url("specialproduct.png");padding:20%}
+  .choices .choices-2{background:url(feeds.png);padding:20%}
+  .choices .choices-3{background:url(accessories.png);padding:20%}
+  .choices .choices-4{background:url(cages.jpg);padding:20%}
+  /* For the captions of .explore, to look good in small (sm) and 
+  smaller sizes */
+  @media all and (max-width: 767px){
+    .adjust{word-wrap:break-word}
+  }
+  /* For the captions of .carousel, to look good in extra small 
+  (xs) size */
+  @media all and (max-width: 575px){
+    .fit{max-height:12.5rem;max-width:12.5rem;overflow:scroll}
+  }
+  /* Filter button */
+  .filter-button:hover{color:white}
+  /* Animations */
+   .animate{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 0.5s ease; 
+    transition: all 0.5s ease;
+  }
+  .revealUp{opacity:0}
+  .showme {
+    opacity:1!important;
+    -webkit-transform: translateY(2%);
+    transform: translateY(2%);
+  }
+  .delay1{transition-delay:0.2s}
+  .delay2{transition-delay:0.4s}
+  .item:hover{
+    -webkit-filter: brightness(115%);
+    -moz-filter: brightness(115%);
+    -o-filter: brightness(115%);
+    filter: brightness(115%);
+    border: 0.3rem solid white;
+  }
+  /* Rounded corners for <nav> items */
+  .item-nav{border-radius:10%}
+  /* Main end */
+
+  /* Footer */
+  .footer{background-color:#555}
+  .brand{color:#e75480}
+  /* Footer end */

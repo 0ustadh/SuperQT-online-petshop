@@ -1,0 +1,472 @@
+<!-- My Bootstrap 5 Project: Super QT Online Pet Shop -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Metadata end -->
+        <!-- For indexing/SEO -->
+        <meta name="description" content="Super cute animals and their stuffs">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="Cute, Pets, Accessories">
+        <meta property='og:title' content="SuperQT Pet Shop">
+        <meta property='og:description' content="Super cute animals and their stuffs">
+        <meta property='og:image' content="logo.png">
+        <!-- SEO end -->
+        <title>Super QT - Homepage</title>
+        <!-- Icon on title bar -->
+        <link rel="icon" href="logo.png" type="image/icon type">
+        <!-- CDNs -->
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+        <!-- CDNs end -->
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer></script>
+    </head>
+      <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)">
+                <img src="superqt.png" class="rounded-circle" alt="Brand Logo" 
+                width="45" height="45">  Super QT</a>
+              <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" 
+              id="mynavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item item item-nav">
+                    <a class="nav-link text-white" aria-current="page" 
+                    href="#footer">About</a>
+                  </li>
+                  <li class="nav-item item item-nav">
+                    <a class="nav-link text-white" href="#reviews">Reviews</a>
+                  </li>
+                  <li class="nav-item item item-nav">
+                    <a class="nav-link text-white" href="#shop">
+                      <i class="fa fa-shop"></i>Shop</a>
+                  </li>
+                  <li class="nav-item item item-nav">
+                    <a class="nav-link text-white" href="#explore">Explore</a>
+                  </li>
+                  <li class="nav-item item item-nav">
+                    <a class="nav-link text-white" href="#contact">
+                      <i class="fa fa-mail"></i>Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-white d-md-none" href="#">Sign in
+                    </a>
+                  </li>
+                  <li class="nav-item item item-nav">
+                    <a class="nav-link text-white h5" href="#contact" 
+                    data-bs-toggle="tooltip" title="Cart" data-bs-placement="bottom">
+                    <i class="fa fa-cart-plus"><span class="badge bg-danger">0
+                    </span></i></a>
+                  </li>
+                </ul>
+                  <form class="d-none d-lg-flex">
+                  <input class="form-control me-2" type="text" 
+                  placeholder="Find stuffs for your pets">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fa fa-search"></i></button>
+                </form>
+                <div class="dropdown mx-3 d-none d-md-block">
+                  <button class="btn btn-outline-info dropdown-toggle text-white"
+                   type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" 
+                   aria-expanded="false">
+                    Sign in
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" 
+                  aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="#">Download App</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar end -->
+
+          <header class="row row-cols-2 px-5 pb-5 text-white">
+            <section class="desc col">
+              <div class="text-center">
+                <img src="superqt.png" class="rounded-circle img-fluid" 
+                alt="Brand Logo" width="40%" height="40%">
+              </div>
+              <h1>Online Shopping for your pets made easier!</h1>
+              <p>Kandhon ko kitabon ke bojh ne jhukaya. Rishvat dena to khud 
+                papa ne sikhaya. 99% marks laoge to ghadi, warna chhadi.</p>
+              <button class="btn btn-outline-warning text-center text-white" 
+              type="button">Shop Now!</button>
+            </section>
+            <section class="image col">
+              <img src="dog-shopping.jpg" alt="image" class="img-fluid rounded">
+            </section>
+          </header>
+
+          <!-- Main contents -->
+          <main>
+           <!-- Carousel -->
+           <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+           <div class="carousel-indicators">
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="0" 
+               class="active"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+               <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+           </div>
+           <!-- The slideshow/carousel -->
+           <div class="carousel-inner">
+               <div class="carousel-item active" data-bs-interval="10000">
+                   <img src="dog-shopping.jpg" class="d-block w-100 img-fluid rounded" 
+                   alt="Carousel One">
+                   <div class="carousel-caption text-white d-md-block col-sm-6 fit">
+                       <h3 class="fs-1">Where does it come from?</h3>
+                       <p>Contrary to popular belief, Lorem Ipsum is not simply 
+                        random text. It has roots in a piece of classical Latin 
+                        literature from 45 BC, making it over 2000 years old.</p>
+                       <a href="#" class="btn btn-warning mt-3">Learn More</a>
+                   </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="2000">
+                   <img src="index.png" class="d-block w-100 img-fluid rounded" 
+                   alt="Carousel Two">
+                   <div class="carousel-caption text-white d-md-block col-6 fit">
+                       <h3 class="fs-1">Where can I get some?</h3>
+                       <p>There are many variations of passages of Lorem Ipsum 
+                        available, but the majority have suffered alteration in 
+                        some form, by injected humour, or randomised words.</p>
+                       <a href="#" class="btn btn-warning mt-3">Learn More</a>
+                   </div>
+               </div>
+               <div class="carousel-item">
+                   <img src="delivery.png" class="d-block w-100 img-fluid rounded" 
+                   alt="Carousel Three">
+                   <div class="carousel-caption text-white d-md-block col-sm-6 fit">
+                       <h3 class="fs-1">Why do we use it?</h3>
+                       <p>It is a long established fact that a reader will be 
+                        distracted by the readable content of a page when looking 
+                        at its layout. The point of using Lorem Ipsum.</p>
+                       <a href="#" class="btn btn-warning mt-3">Learn More</a>
+                   </div>
+               </div>
+               <div class="carousel-item">
+                   <img src="Rabbit.png" class="d-block w-100 img-fluid rounded" 
+                   alt="Carousel Three">
+                   <div class="carousel-caption text-white d-md-block col-6 fit">
+                       <h3 class="fs-1">Why do we use it?</h3>
+                       <p>It is a long established fact that a reader will be 
+                        distracted by the readable content of a page when looking 
+                        at its layout. The point of using Lorem Ipsum.</p>
+                       <a href="#" class="btn btn-warning mt-3">Learn More</a>
+                   </div>
+               </div>
+           </div>
+           <!-- Left and right controls/icons -->
+           <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+            data-bs-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#demo"
+            data-bs-slide="next">
+               <span class="carousel-control-next-icon"></span>
+           </button>
+           <!-- Carousel div closing -->
+           </div>
+           <!-- Testimonials and reviews -->
+           <section id="reviews">
+             <h1 class="display-3 text-center text-white pt-5 pb-3 animate revealUp">
+              Testimonials</h1>
+             <div class="row row-cols-3 row-cols-md-4 gap-3 justify-content-center">
+               <!-- Insert reviews here -->
+          <div class="card col bg-secondary text-white animate revealUp">
+            <div class="container px-3 py-3 text-center">
+              <p>"Some great quote!"</p>
+              <cite>Satisfied Customer
+              </cite>
+              </div>
+            </div>
+          <!---->
+          <div class="card col bg-secondary text-white animate revealUp delay1">
+            <div class="container px-3 py-3">
+              <p>"Kandhon ko kitabon ke bojh ne jhukaya.</p> 
+              <p>Rishvat dena to khud papa ne sikhaya."</p>
+              <cite>Satisfied Customer
+              </cite>
+            </div>
+          </div>
+          <!---->
+          <div class="card col bg-secondary text-white animate revealUp delay2">
+          <div class="container px-3 py-3">
+            <p>"99% marks laaoge to ghadi, warna chhadi.</p>
+            <p>Likh likh pada hatheli par Alpha, Beta, Gamma ka chhala."</p>
+            <cite>Satisfied Customer
+            </cite>
+          </div>
+          </div>
+          <!---->
+          <div class="card col bg-secondary text-white animate revealUp">
+          <div class="container px-3 py-3">
+            <p>"Concentrated H2SO4 ne pura.</p>
+            <p>Pura bachpan jala daala!"</p>
+            <cite>Satisfied Customer
+            </cite>
+          </div>
+          </div>
+          <div class="card col bg-secondary text-white animate revealUp delay1">
+            <div class="container px-3 py-3">
+              <p>"Bachpan do gaya, jawani pi gayi.</p>
+              <p>Pura bachpan jala daala!"</p>
+              <cite>Satisfied Customer
+              </cite>
+            </div>
+            </div>
+             </div>
+             <div class="text-center animate revealUp">
+              <button class="btn btn-warning text-white mt-3" type="button">
+                Read more stories</button>
+              </div>
+            </section>
+          <!-- Testimonials and reviews end -->
+          <!-- Shop -->
+           <section id="shop">
+            <h1 class="display-3 text-center text-white pt-5 pb-3">Popular 
+              products today</h1>
+           <div class="text-center animate revealUp d-none d-md-block">
+             <button class="btn btn-outline-info filter-button text-white" 
+             data-filter="all">All</button> 
+             <button class="btn btn-outline-info filter-button text-white" 
+             data-filter="accessories">Accessories</button> 
+             <button class="btn btn-outline-info filter-button text-white" 
+             data-filter="pets">Pets</button> 
+             <button class="btn btn-outline-info filter-button text-white" 
+             data-filter="below100">Below 100</button> 
+             <button class="btn btn-outline-info filter-button text-white" 
+             data-filter="below500">Below 500</button> 
+            </div> 
+            <br />
+            <div id="myDIV" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 
+            gap-3 justify-content-center">
+              <div class="card col filter accessories below500 animate 
+              item rounded">
+                <img class="card-img-top pt-5 img-fluid rounded" src="toys.png" 
+                alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Toys for Pets</h4>
+                  <p class="card-text">Some example text some example text. 
+                    John Doe is an architect and engineer</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" 
+                  title="Add to cart: Product" data-bs-placement="top">
+                  <i class="fa fa-cart-plus"></i> PhP 199</a>
+                </div>
+              </div>
+              <div class="card col filter pets animate delay1 item rounded">
+                <img class="card-img-top pt-5 img-fluid rounded" src="puppy.png" 
+                alt="Shih Tzu Puppy">
+                <div class="card-body">
+                  <h4 class="card-title">Purebred Shih Tzu Puppy</h4>
+                  <p class="card-text">Some example text some example text. 
+                    John Doe is an architect and engineer</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" 
+                  title="Add to cart: Product" data-bs-placement="top">
+                  <i class="fa fa-cart-plus"></i> PhP 4,997</a>
+                </div>
+              </div>
+              <div class="card col filter pets animate delay2 item rounded">
+                <img class="card-img-top pt-5 img-fluid rounded" src="kitten.png" 
+                alt="Persian Kitten">
+                <div class="card-body">
+                  <h4 class="card-title">Purebred Persian Kitten</h4>
+                  <p class="card-text">Some example text some example text. 
+                    John Doe is an architect and engineer</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" 
+                  title="Add to cart: Product" data-bs-placement="top">
+                  <i class="fa fa-cart-plus"></i> PhP 4,997</a>
+                </div>
+              </div>
+              <div class="card col filter accessories below500 animate
+              item rounded">
+                <img class="card-img-top pt-5 img-fluid rounded" src="Collar.png" 
+                alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Dog Collar</h4>
+                  <p class="card-text">Some example text some example text. 
+                    John Doe is an architect and engineer</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" 
+                  title="Add to cart: Product" data-bs-placement="top">
+                  <i class="fa fa-cart-plus"></i> PhP 299</a>
+                </div>
+              </div>
+              <div class="card col filter accessories below100 animate 
+              delay1 item rounded">
+                <img class="card-img-top pt-5 img-fluid rounded" src="petbowl.png" 
+                alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Pet bowl for dogs, cats, rabbits</h4>
+                  <p class="card-text">Some example text some example text. 
+                    John Doe is an architect and engineer</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" 
+                  title="Add to cart: Product" data-bs-placement="top">
+                  <i class="fa fa-cart-plus"></i> PhP 99</a>
+                </div>
+              </div>
+              <div class="card col filter accessories below100 animate
+              delay2 item rounded">
+                <img class="card-img-top pt-5 img-fluid rounded" src="Petbrush.png" 
+                alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Pet Cage Cleaner</h4>
+                  <p class="card-text">Some example text some example text. 
+                    John Doe is an architect and engineer</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" 
+                  title="Add to cart: Product" data-bs-placement="top">
+                  <i class="fa fa-cart-plus"></i> PhP 99</a>
+                </div>
+              </div>
+              
+            </div>
+            <!-- Dedicated div for the button to display it properly when 
+              filtering results -->
+            <div class="text-center animate revealUp">
+              <button class="btn btn-warning text-white mt-3" type="button">
+                Shop All Products</button>
+            </div>
+           </section>
+          <!-- Shop end -->
+          <!-- Explore -->
+          <div id="explore" class="text-center text-white rounded px-5 py-5">
+            <div class="row row-cols-2 choices">
+              <div class="col choices-1 animate revealUp">
+                <a href="#" class="text-white"><h1 class="caption adjust item">
+                  Special Products</h1></a>
+              </div>
+              <div class="col choices-2 animate revealUp delay1">
+                <a href="#" class="text-white"><h1 class="caption item">Feeds
+                </h1></a>
+              </div>
+              <div class="col choices-3 animate revealUp">
+                <a href="#" class="text-white"><h1 class="caption adjust item">
+                  Accessories</h1></a>
+              </div>
+              <div class="col choices-4 animate revealUp delay1">
+                <a href="#" class="text-white"><h1 class="caption item">
+                  Cages</h1></a>
+              </div>
+            </div>
+            <div class="row row-cols-3 pt-5 justify-content-center">
+              <div class="col animate revealUp">
+                <a href="#" class="text-white">
+                <img src="Locally-Logo .png" alt="Locally made products" class="rounded" 
+                width="50%" height="50%">
+                  <h5>Locally made products</h5>
+                  </a>
+              </div>
+              <div class="col animate revealUp delay1">
+                <a href="#" class="text-white">
+                <img src="ecofriendly.png" alt="Eco-friendly products" class="rounded"
+                width="50%" height="50%">
+                  <h5>Eco-friendly products</h5>
+                  </a>
+              </div>
+              <div class="col animate revealUp delay2">
+                <a href="#" class="text-white">
+                <img src="Petbrush.png" alt="Cleanliness" class="rounded" 
+                width="50%" height="50%">
+                  <h5>Cleanliness</h5>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <!-- Explore end -->
+          <hr/>
+          <!-- Contact us -->
+           <div id="contact" class="text-center px-5 py-5">
+             <h1 class="display-2 text-white pb-3">Follow Super QT on 
+              Facebook!</h1>
+             <a href="#" class="text-primary display-6 animate revealUp">
+              <i class="fa fa-facebook"></i> <span class="text-white">
+                Super QT Online Pet Shop PH</span></a>
+             <div class="pb-5"><br></div>
+             <!-- Benefits/Perks -->
+             <div class="row row-cols-3 pt-5">
+                <div class="col animate revealUp">
+                  <img src="shipping.png" alt="Nationwide Shipping" class="rounded"
+                  width="50%" height="50%">
+                  <h5 class="text-white">Nationwide shipping</h5>
+                </div>
+                <div class="col animate revealUp delay1">
+                  <img src="return.jpeg" alt="Easy 30-day returns" class="rounded"
+                  width="50%" height="50%">
+                  <h5 class="text-white">Easy 30-day Returns</h5>
+                </div>
+                <div class="col animate revealUp delay2">
+                  <img src="warranty.png" alt="1 year warranty" class="rounded"
+                  width="50%" height="50%">
+                  <h5 class="text-white">1 year warranty</h5>
+                </div>
+             </div>
+           </div>
+           <!-- Contact us end -->
+          </main>
+           <!-- Main contents end -->
+
+           <footer id="footer" class="footer justify-content-center">
+             <section class="links row row-cols-5 px-5 py-5">
+              <div class="col">
+                <a href="#" class="text-white"><h1>Super QT</h1></a>
+              </div>
+              <div class="col">
+                <a href="#" class="d-block text-white">Home</a>
+                <a href="#" class="d-block text-white">Shop</a>
+                <a href="#" class="d-block text-white">Our Story</a>
+                <a href="#" class="d-block text-white">Contact</a>
+                <a href="#" class="d-block text-white">Sign in</a>
+              </div>
+              <div class="col">
+                <a href="#" class="d-block text-white">FAQs</a>
+                <a href="#" class="d-block text-white">About us</a>
+                <a href="#" class="d-block text-white">Jobs</a>
+                <a href="#" class="d-block text-white">Community</a>
+                <a href="#" class="d-block text-white">Shipping and Returns</a>
+              </div>
+              <div class="col">
+                <a href="#" class="d-block text-white">Facebook</a>
+                <a href="#" class="d-block text-white">Twitter</a>
+                <a href="#" class="d-block text-white">Instagram</a>
+                <a href="#" class="d-block text-white">Pinterest</a>
+                <a href="#" class="d-block text-white">Snapchat</a>
+              </div>
+              <!--
+              <form class="col d-none d-md-flex">
+                <input class="form-control form-control-sm me-2" id="myInput" 
+                type="text" placeholder="Shop for your pets">
+                <button class="btn btn-sm btn-outline-primary" type="button">
+                  <i class="fa fa-search text-white"></i></button>
+              </form>
+              -->
+             </section>
+             <!-- Footer's footer -->
+            <section class="bg-dark text-center px-3 py-3">
+              <p class="text-white">2022 <a href="#" class="brand">Super QT</a> 
+                Online pet shop. All rights reserved.</p>
+            </section>
+           </footer>
+    </body>
+</html>
